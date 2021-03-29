@@ -1,0 +1,557 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+/* Menu humberger */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%0;
+  left: 80%;
+  z-index: 99;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: #000;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+
+/* Navbar */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 33px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 110px;
+  width: 100%;
+  background: rgba(245, 246, 250, 1);
+  z-index: 99;
+}
+
+nav.navbar .navigasi ul li {
+  list-style: none;
+  display: inline;
+  justify-content: space-between;
+}
+
+nav.navbar .navigasi ul li a {
+  color: #3498DB;
+  font-weight: 600;
+  margin-left: 30px;
+  text-decoration: none;
+  transition: all .5s;
+}
+
+nav.navbar .navigasi ul li a:hover {
+  color: #767676;
+}
+
+/* End Navbar */
+
+/* Jumbotron */
+section.jumbotron {
+  margin-top: 110px;
+  display: flex;
+}
+
+section.jumbotron .lingkaran {
+  position: absolute;
+  margin: -15px 0 10px -45px;
+  background: #99CBED;
+  border-radius: 100%;
+  height: 105px;
+  width: 105px;
+  z-index: -1;
+}
+
+section.jumbotron .jumbotext {
+  margin: 70px 10px 70px 70px;
+}
+
+section.jumbotron .jumbotext h3 {
+  font-weight: 600;
+  font-size: 3.3em;
+  align-items: center;
+  color: #494949;
+  animation-name: textwarna;
+  animation-duration: 4s;
+  animation-iteration-count: 60;
+}
+
+@keyframes textwarna {
+  0% {
+    color: red;
+  }
+
+  25% {
+    color: yellow;
+  }
+
+  50% {
+    color: blue;
+  }
+
+  75% {
+    color: green;
+  }
+
+  100% {
+    color: red;
+  }
+}
+
+section.jumbotron .jumbotext p {
+  color: #9EAABB;
+  margin-top: 30px;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+section.jumbotron .jumbotext input {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  background: #fff;
+  color: #4BA4DF;
+  margin-top: 47px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: 2px solid black;
+  transition: all .4s;
+}
+
+section.jumbotron .jumbotext input:hover {
+  background: #000;
+  color: #fff;
+}
+
+section.jumbotron .image {
+  margin: 50px 35px 70px 0;
+}
+
+/* End Jumbotron */
+
+/* main */
+
+main {
+  margin-bottom: 120px;
+}
+
+main .kotak1,
+.kotak2 {
+  position: absolute;
+  background: #BEC7D2;
+  height: 60px;
+  width: 60px;
+  z-index: -1;
+}
+
+main .kotak1 {
+  margin: -5px 0 10px 750px;
+}
+
+main .kotak2 {
+  margin: 23px 0 10px 795px;
+}
+
+main .title {
+  text-align: center;
+}
+
+main .title h3 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+main .title h3 span {
+  display: block;
+  margin-top: -10px;
+}
+
+main .title p {
+  color: #9EAABB;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+main .card-content {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 50px 100px;
+}
+
+main .card-content .card1,
+.card2,
+.card3 {
+  background: #99CBED;
+  padding: 25px 45px;
+  margin: 0 10px;
+}
+
+main .card-content .card1 h3,
+.card2 h3,
+.card3 h3 {
+  color: #181818;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+main .card-content .card1 p,
+.card2 p,
+.card3 p {
+  margin-top: 75px;
+  color: #597284;
+  font-size: 18px;
+}
+
+/* end main */
+
+/* Portfolio */
+
+section.portfolio {
+  position: relative;
+}
+
+section.portfolio .kotak {
+  position: absolute;
+  background: #BEC7D2;
+  top: 30px;
+  left: 39%;
+  height: 25px;
+  width: 300px;
+  z-index: -1;
+}
+
+section.portfolio .title {
+  text-align: center;
+  margin-bottom: 110px;
+}
+
+section.portfolio .title h3 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+section.portfolio .card-content {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+section.portfolio .card-content .portcard1,
+.portcard2,
+.portcard3 {
+  margin: 0 10px;
+}
+
+section.portfolio .card-content .portcard1 h3,
+.portcard2 h3,
+.portcard3 h3 {
+  color: #181818;
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 15px;
+}
+
+section.portfolio .tombol {
+  display: flex;
+  justify-content: center;
+}
+
+section.portfolio input {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 300;
+  background: #fff;
+  color: #9EAABB;
+  margin-top: 35px;
+  margin-bottom: 120px;
+  padding: 10px 25px;
+  border: 1px solid black;
+  transition: all .4s;
+}
+
+section.portfolio input:hover {
+  background: #464646;
+  color: #bbb;
+}
+
+/* End Portfolio */
+
+/* Companies */
+section.companies {
+  position: relative;
+  display: grid;
+  grid-template-areas: "text gambar gambar";
+  grid-template-columns: 1fr 1.5fr;
+  margin-bottom: 120px;
+}
+
+section.companies .kotak {
+  position: absolute;
+  background: #E5E9ED;
+  margin: 85px 0 10px 50px;
+  height: 90px;
+  width: 90px;
+  z-index: -1;
+}
+
+section.companies .text-description {
+  grid-area: text;
+  padding: 0 70px;
+}
+
+section.companies .text-description h3 {
+  font-size: 38px;
+  font-weight: 600;
+}
+
+section.companies .text-description p {
+  margin-top: 60px;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+section.companies .logo-companies {
+  grid-area: gambar;
+}
+
+section.companies .logo-companies .com1 {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 90px;
+}
+
+section.companies .logo-companies .com2 {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 90px;
+}
+
+section.companies .logo-companies .com3 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* End Companies */
+
+/* Customers */
+.customer {
+  position: relative;
+}
+
+.customer .title {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.customer .title h3 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.customer .title img {
+  margin: -50px 0 10px -50px;
+  width: 105px;
+  position: absolute;
+  z-index: -999;
+}
+
+.customer .container {
+  display: flex;
+  justify-content: center;
+}
+
+.customer .kartu1,
+.kartu2,
+.kartu3,
+.kartu4 {
+  width: 273px;
+  text-align: center;
+  margin: 0 7px;
+}
+
+.customer .people-img1,
+.people-img2,
+.people-img3,
+.people-img4 {
+  display: flex;
+  justify-content: center;
+}
+
+
+.customer .container .text h3 {
+  margin-top: 50px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.customer .container .kartu1 .text span,
+.kartu2 .text span,
+.kartu3 .text span,
+.kartu4 .text span {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.customer .container .kartu1 .text p,
+.kartu2 .text p,
+.kartu3 .text p,
+.kartu4 .text p {
+  font-weight: 300;
+  color: #8D8D8D;
+  margin-top: 75px;
+}
+
+/* End Customers */
+
+/* Footer */
+.footer-grid {
+  display: grid;
+  grid-template-areas: "input about location";
+  grid-template-columns: 1.3fr 1fr 1fr;
+  top: 0;
+  left: 0;
+  padding: 5px 80px;
+  height: 400px;
+  width: 100%;
+  margin-top: 110px;
+  background: rgb(153, 203, 237);
+}
+
+.footer-grid .column-inputs {
+  /* background: red; */
+  grid-area: input;
+}
+
+.footer-grid .about {
+  /* background: green; */
+  padding: 0 10px;
+  grid-area: about;
+}
+
+.footer-grid .location {
+  /* background: tomato; */
+  padding: 0 20px;
+  grid-area: location;
+}
+
+.footer-grid .column-inputs h3 {
+  margin-top: 50px;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.footer-grid .column-inputs span {
+  display: block;
+}
+
+.footer-grid .column-inputs input[type=email],
+input[type=text] {
+  background: rgb(153, 203, 237);
+  color: #181818;
+  border: 1px solid #000;
+  width: 85%;
+  height: 60px;
+  padding: 20px;
+  margin: 7px 0;
+}
+
+.footer-grid .column-inputs input[type=email],
+input[type=text]:visited {
+  border: 1px solid #000;
+}
+
+.footer-grid .column-inputs input[type=button] {
+  cursor: pointer;
+  background: rgb(24, 24, 24);
+  color: #fff;
+  border: 1px solid #000;
+  width: 130px;
+  height: 50px;
+  margin-top: 7px;
+  transition: all .5s;
+}
+
+.footer-grid .column-inputs input[type=button]:hover {
+  background: rgba(24, 24, 24, .9);
+}
+
+.footer-grid .about h3 {
+  margin-top: 50px;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.footer-grid .about p {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.footer-grid .about .social-media img {
+  width: 30px;
+  margin: 25px 10px 20px 0;
+}
+
+.footer-grid .location h3 {
+  margin-top: 50px;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.footer-grid .location .logo-alamat {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-grid .location .logo-alamat .tempat,
+.telpn,
+.whats-app,
+.email {
+  /* background: cyan; */
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.footer-grid .location img {
+  width: 20px;
+}
+
+.footer-grid .location p {
+  padding: 0 10px;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.footer-grid .location p span {
+  display: block;
+}
+
+footer .copyright {
+  background: rgb(153, 203, 237);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 300;
+  padding-bottom: 50px;
+}
+
+/* End Footer */

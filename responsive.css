@@ -1,0 +1,44 @@
+@media (max-width:600px) {
+
+  /* navbar */
+  nav.navbar .navigasi ul {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  /* Jumbotron */
+  section.jumbotron {
+    position: relative;
+    display: inline-block;
+  }
+
+  section.jumbotron .jumbotext {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 150px 70px;
+    z-index: 9;
+  }
+
+  section.jumbotron .lingkaran {
+    background: #edf5fa;
+    margin: -15px 0 10px -45px;
+    height: 105px;
+    width: 105px;
+  }
+
+  section.jumbotron .jumbotext p {
+    color: #fff;
+    text-shadow: 5px 5px 10px #000;
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 18px;
+  }
+
+  .jumbotron .image {
+    width: 100%;
+  }
+}
